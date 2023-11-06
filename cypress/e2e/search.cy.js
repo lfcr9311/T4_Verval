@@ -11,9 +11,7 @@ describe("Search Test", () => {
     it("Search for 'to feliz'", () => {
       cy.get('input[type="text"]').type("to feliz");
       cy.get('input[type="text"]').type("{enter}");
-      
       cy.wait(2000);
-
       cy.get('input[type="text"]').type(" demais");
       cy.get('input[type="text"]').type("{enter}");
     });
